@@ -1,0 +1,180 @@
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body bgcolor="yellow" text="black">
+	<center>
+<h1><u>Test</u></h1>
+	</center>
+<hr size="3" color="red">
+<h4 align="center">Welcome to Raunak Quizzer</h4>
+<h4>FM=10</h4>
+<hr size="3" color="red">
+<form name="test" id="test">
+<p id="qt1">
+Q1. A particle is moving in a circular path of radius r. The displacement after half a circle would be:<br>
+<input type="radio"  name="q1"  value="A">Zero<br>
+<input type="radio"  name="q1"  value="B">πr<br>
+<input type="radio"  name="q1"  value="C">2r<br>
+<input type="radio"  name="q1"  value="D">2πr<br><br>
+</p>
+	
+<p id="qt2">
+Q2. Area under a υ -1 graph represents a physical quantity which has the unit<br>
+<input type="radio" name="q2"  value="A">m²<br>
+<input type="radio" name="q2"  value="B">m<br>
+<input type="radio" name="q2"  value="C">m³<br>
+<input type="radio" name="q2"  value="D">ms^-1<br>
+</p>
+	
+<p id="qt3">
+Q3. Rate of change of displacement is called<br>
+<input type="radio"  name="q3"  value="A">Speed<br>
+<input type="radio"  name="q3"  value="B">Deceleration<br>
+<input type="radio"  name="q3"  value="C">Acceleration<br>
+<input type="radio"  name="q3"  value="D">Velocity<br>
+</p>
+	
+<p id="qt4">
+Q4. The average velocity of a body is given by the expression :<br>
+<input type="radio" name="q4"  value="A">V= u+ at<br>
+<input type="radio" name="q4"  value="B">2as= v²− u²<br>
+<input type="radio" name="q4"  value="C">Vav=(u + v)/2<br>
+<input type="radio" name="q4"  value="D">S= ut + ½ a t²<br>
+</p>
+	
+<p id="qt5">
+Q5. SI Unit of measurement of acceleration is<br>
+<input type="radio" name="q5"  value="A">m/s<br>
+<input type="radio" name="q5"  value="B">m/s²<br>
+<input type="radio" name="q5"  value="C">m/hr<br>
+<input type="radio" name="q5"  value="D">M<br>
+</p>
+	
+<p id="qt6">
+Q6. Distance covered by the body during the interval from 10sec to 20 sec is<br>
+<input type="radio" name="q6"  value="A">180<br>
+<input type="radio" name="q6"  value="B">200<br>
+<input type="radio" name="q6"  value="C">240<br>
+<input type="radio" name="q6"  value="D">270<br>
+</p>
+
+<p id="qt7">
+Q7. At the point A the body is at a distance of<br>
+<input type="radio" name="q7"  value="A">90m<br>
+<input type="radio" name="q7"  value="B">180m<br>
+<input type="radio" name="q7"  value="C">270m<br>
+<input type="radio" name="q7"  value="D">350m<br>
+</p>
+
+<p id="qt8">
+Q8. What does the slope of distance - time graph give?<br>
+<input type="radio" name="q8"  value="A">Acceleration<br>
+<input type="radio" name="q8"  value="B">Uniform speed<br>
+<input type="radio" name="q8"  value="C">Speed<br>
+<input type="radio" name="q8"  value="D">both[b] and [c] depending upon the time of graph<br>
+</p>
+
+<p id="qt9">
+Q9. Who gave the equations of the motion first time? <br>
+<input type="radio" name="q9"  value="A">Bernhard Nobel<br>
+<input type="radio" name="q9"  value="B">Issac Newton<br>
+<input type="radio" name="q9"  value="C">C.V. Raman<br>
+<input type="radio" name="q9"  value="D">Einstein<br>
+</p>
+
+<p id="qt10">
+Q10. The rate of change of velocity per second is known as:<br>
+<input type="radio" name="q10"  value="A">acceleration<br>
+<input type="radio" name="q10"  value="B">speed<br>
+<input type="radio" name="q10"  value="C">average velocity<br>
+<input type="radio" name="q10"  value="D">linear motion<br>
+</p>
+	
+<input type="button" id="n" name="Veiw score" value="Veiw score" onclick="score()" style="padding: 10px;">
+</form>
+<p id="score"></p>
+<h3 id="ansf"></h3>
+<script>
+	function score(){
+	var q1=document.test.q1.value;
+	var q2=document.test.q2.value;
+	var q3=document.test.q3.value;
+	var q4=document.test.q4.value;
+	var q5=document.test.q5.value;
+	var q6=document.test.q6.value;
+	var q7=document.test.q7.value;
+	var q8=document.test.q8.value;
+	var q9=document.test.q9.value;
+	var q10=document.test.q10.value;
+	var score=0;
+	if(q1=="C"){
+	    score++;
+	    document.getElementById("qt1").style.color = "green";
+	}else{
+	    document.getElementById("qt1").style.color = "red";
+	}
+	if(q2=="B"){
+	    score++;
+	    document.getElementById("qt2").style.color = "green";
+	}else{
+	    document.getElementById("qt2").style.color = "red";
+	}
+	if(q3=="D"){
+	    score++;
+	    document.getElementById("qt3").style.color = "green";
+	}else{
+	    document.getElementById("qt3").style.color = "red";
+	}
+	if(q4=="C"){
+	    score++;
+	    document.getElementById("qt4").style.color = "green";
+	}else{
+	    document.getElementById("qt4").style.color = "red";
+	}
+	if(q5=="B"){
+	    score++;
+	    document.getElementById("qt5").style.color = "green";
+	}else{
+	    document.getElementById("qt5").style.color = "red";
+	}
+	if(q6=="D"){
+	    score++;
+	    document.getElementById("qt6").style.color = "green";
+	}else{
+	    document.getElementById("qt6").style.color = "red";
+	}
+	if(q7=="A"){
+	    score++;
+	    document.getElementById("qt7").style.color = "green";
+	}else{
+	    document.getElementById("qt7").style.color = "red";
+	}
+	if(q8=="C"){
+	    score++;
+	    document.getElementById("qt8").style.color = "green";
+	}else{
+	    document.getElementById("qt8").style.color = "red";
+	}
+	if(q9=="B"){
+	    score++;
+	    document.getElementById("qt9").style.color = "green";
+	}else{
+	    document.getElementById("qt9").style.color = "red";
+	}
+	if(q10=="A"){
+	    score++;
+	    document.getElementById("qt10").style.color = "green";
+	}else{
+	    document.getElementById("qt10").style.color = "red";
+	}
+	
+	//document.getElementById("score") .innerHTML="<h1 style=color:blue;> Your marks  is "+score+"/6.</h1>";
+	alert("Your marks is "+score+"/10")
+	document.getElementById("n").disabled=true;
+	document.getElementById("ansf").innerHTML = "For answer go to = http://getanswer.42web.io/";
+	
+	}
+</script>
+</body>
+</html>
